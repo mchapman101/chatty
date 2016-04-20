@@ -14,6 +14,11 @@ angular.module('chattyApp')
       }
     };
 
+    $scope.formatDate = function(dateString) {
+    return new Date(dateString).toLocaleString();
+}
+
+
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
